@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>People</title>
+
+    <Style>
+
+body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #E9F1FA;
+            color: #0062A9;
+        }
+        nav {
+            background-color: #00ABE4;
+            padding: 1%;
+        }   
+        nav a {
+            color: #000000;
+            margin: 0 100px;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+        }
+
+.title {
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
+    height: 50px;
+    width: 100%;
+    background-color: #E9F1FA;
+    margin-top: 20px;
+}
+
+.title p {
+    color: #333;
+    font-size: 20px;
+    font-weight: 400;    
+}
+
+.MainContainer{
+    background-color: #E9F1FA;
+    width: 100%;
+    height: 470px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.ImageContainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 100px;
+
+    width: 90%;
+    height: 500px;
+}
+
+.ImageCont1{
+    position: relative;
+    width: 350px;
+    height: 420px;
+}
+
+.img1{
+    height: 420px;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.Richard {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ImageCont2{
+    position: relative;
+    width: 350px;
+    height: 420px;
+}
+
+.img2{
+    height: 420px;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.Merrell {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.ImageCont3{
+    position: relative;
+    width: 350px;
+    height: 420px;
+}
+
+.img3{
+    height: 420px;
+    width: 340px;
+    border-radius: 20px;
+}
+
+.James {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.thecard{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    transform-style: preserve-3d;
+    transition: all 0.999s ease;
+}
+
+.thecard:hover{
+    transform: rotateY(180deg);
+}
+
+.thefront{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background: #ffff;
+    color: #333;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-content: stretch;
+}
+
+.theback{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    background-color: white;
+    color: #333;
+    transform: rotateY(180deg);
+    border-radius: 20px;
+    border-radius: 20px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    
+}
+    </Style>
+</head>
+
+
+<body>
+
+    <header>
+    <nav>
+        <a href="../index.html">Home</a>
+        <a href="../People/PeoplePage.html" style="color: white;">People</a>
+        <a href="../About/About.html">About</a>
+    </nav>
+    </header>
+    
+    <div class="title"><p> Our Group Members </p></div>
+
+    <section class="MainContainer">
+        <div class="ImageContainer">
+
+            <div class="ImageCont1">
+
+                <div class="thecard">
+                <div class="thefront">
+                    <img  class="img1" src="../Images/Richard.png" alt="Richard Chow">
+                </div>
+                <div class="theback">
+                    <span class="Richard"><p>Richard Chow</p></span>
+                    <p class="text1">(Project Leader)</p>
+                </div>
+            
+            </div>
+            </div>
+
+            <div class="ImageCont2">
+
+                <div class="thecard">
+                <div class="thefront">
+                    <img  class="img2" src="../Images/Merrell.png" alt="Merrell Calma">
+                </div>
+                <div class="theback">
+                    <span class="Merrell"><p>Merrell Calma</p></span>
+                    <p class="text2">(Collaborator)</p>
+                </div>
+        
+            </div>
+            </div>
+
+            <div class="ImageCont3">
+
+                <div class="thecard">
+                <div class="thefront">
+                    <img  class="img3" src="../Images/James.png" alt="James Duay">
+                </div>
+                <div class="theback">
+                    <span class="James"><p>James Ryan Duay</p></span>
+                    <p class="text3">(Collaborator)</p>
+                </div>
+            
+            </div>
+            </div>
+
+            
+        </div>
+    </section>
+
+</body>
+</html>
